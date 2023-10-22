@@ -44,7 +44,7 @@ class Astronomía (models.Model):
     imagen = models.ImageField(upload_to='media', null=True, blank = True)
     def __str__ (self):
         return f'Titulo: {self.titulo} | Autor: {self.autor} | Fecha: {self.fecha}'
-
+    
 class Tecnología (models.Model): 
 
     titulo = models.CharField(max_length = 30)
@@ -54,7 +54,7 @@ class Tecnología (models.Model):
     fecha = models.DateField(auto_now_add=True)
     imagen = models.ImageField(upload_to='media', null=True, blank = True)
     def __str__ (self):
-        return f'Titulo: {self.titulo} | Autor: {self.autor} | Fecha: {self.fecha}'
+        return f'Titulo: {self.titulo} | Autor: {self.autor} | Fecha: {self.fecha}'    
 
 class Miembros (models.Model):
 
